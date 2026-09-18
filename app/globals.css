@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.radial-gradient {
+  background-size: 400% 400%;
+  background: radial-gradient(circle, #6a5acd, #8a2be2, #9370db);
+  animation: gradientAnimation 8s ease infinite;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+/* styles/fonts.css */
+@font-face {
+  font-family: 'Monument';
+  src: url('./../public/fonts/Sen-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('./../public/fonts/Sen-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('./../public/fonts/Sen-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('./../public/fonts/Sen-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('./../public/fonts/Sen-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Example Utility Classes */
+.font-light {
+  font-family: 'Monument', sans-serif;
+  font-weight: 300;
+}
+
+.font-regular {
+  font-family: 'Monument', sans-serif;
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-family: 'Monument', sans-serif;
+  font-weight: 600;
+}
+
+.font-bold {
+  font-family: 'Monument', sans-serif;
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-family: 'Monument', sans-serif;
+  font-weight: 800;
+}
+
+
+.blur-in {
+  opacity: 1;
+  transition: opacity 0.1s ease-in;
+}
+
+.blur-out {
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+}
+
+/* Custom CSS for the overlay effect */
+.overlay-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-button::before {
+  content: '';
+  rotate: 0;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 0px;
+  height: 100%;
+  background-color: #C58C34;
+  transition: width 0.5s ease;
+}
+
+.overlay-button:hover::before {
+  width: 100%;
+}
