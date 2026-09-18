@@ -195,7 +195,7 @@ const Footer = ({
                     transition-all duration-300
                     hover:translate-x-1
                     hover:text-white
-                    md:text-lg
+                    md:text-base
                   "
                 >
                   <span>{link.name}</span>
@@ -239,7 +239,7 @@ const Footer = ({
                     transition-all duration-300
                     hover:translate-x-1
                     hover:text-white
-                    md:text-lg
+                    md:text-base
                   "
                 >
                   <span>{link.name}</span>

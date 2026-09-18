@@ -78,7 +78,7 @@ const Navbar = ({ otpForm }) => {
                     hover:shadow-lg hover:scale-105`}
           >
             <span className="z-20 relative text-sm tracking-wider text-white font-poppins group-hover:text-blue-600 transition-colors duration-300">
-              SCHEDULE SITE VISIT
+              Book Your Seat
             </span>
             <IoMdArrowForward className="text-xl z-20 text-white group-hover:text-blue-600 transition-colors duration-300 group-hover:translate-x-1" />
             <div className="absolute inset-0 w-0 bg-white transition-all duration-300 group-hover:w-full"></div>
